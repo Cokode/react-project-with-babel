@@ -9,6 +9,7 @@ function Lapp() {
         <div>
             <h1>Rick and Morty</h1>
             <List />
+                <button> Click </button>
         </div>
     )
 }
