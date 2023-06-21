@@ -1,15 +1,18 @@
+import {useState } from "react";
 import React from "react";
-import { useState } from "react";
 
 function ChangeColor() {
     const [color, setColor] = useState("RED");
 
+    function HandleColorChange() {
+        setColor('BLUE');
+    }
+
     return (
         <div>
-            <h1> My colors</h1>
-            <p> my favourite color is {color}!</p> 
+            <h1>my favourite color is {color}!</h1> 
             <button type="button" 
-                onClick={setColor("BLUE")}>Blue</button>
+                onClick={HandleColorChange}>Blue</button>
         </div>
     )
 }

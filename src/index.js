@@ -2,18 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import List from './components/List';
-import App from "./components/App";
+import ChangeColor from "./components/color";
 
 function Lapp() { 
     return ( 
         <div>
+            <ChangeColor />
             <h1>Rick and Morty</h1>
             <List />
-                <button> Click </button>
         </div>
     )
 }
 
-const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
-root.render(<Lapp />);
+function Characters() {
+    return <Character_two />
+}
+
+const roost = ReactDOM.createRoot(document.getElementById('root'));
+roost.render(<Lapp />);
