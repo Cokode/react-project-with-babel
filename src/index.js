@@ -2,20 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import List from './components/List';
-import ChangeColor from "./components/color";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Lapp() { 
     return ( 
-        <div>
-            <ChangeColor />
+        <div className="container">
             <h1>Rick and Morty</h1>
             <List />
         </div>
     )
-}
-
-function Characters() {
-    return <Character_two />
 }
 
 const roost = ReactDOM.createRoot(document.getElementById('root'));
