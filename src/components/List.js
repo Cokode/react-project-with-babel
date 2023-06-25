@@ -35,7 +35,7 @@ function List() {
               image={character.image}
             />
           ))
-          )}
+        )}
         </div>
   </div>
   )
