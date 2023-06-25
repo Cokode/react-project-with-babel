@@ -1,7 +1,7 @@
 import React from 'react'
   
 function Character(character) {
-    return (
+   return (
         
         <div className='col-3'>
             <div className='card'>
@@ -16,7 +16,7 @@ function Character(character) {
                 </div>
             </div>
         </div>
-    );
-};
+   );
+}
 
 export default Character;
